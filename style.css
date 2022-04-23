@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+/* .parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.one{
+    background-color: #eee;
+    padding: 1px;
+    width: 600px;
+    float: left; 
+    position: relative;   
+}
+.one::after{
+    content: "";
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    background-color: aquamarine;
+    right: 0;
+    top:0;
+}
+.one::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    left: -20px;
+    bottom: 20px;
+    border: 10px solid white;
+    border-color: red transparent transparent green;
+}
+/* .one .pipeline{
+    position:absolute;
+} */
+/* .user{
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: top;
+
+}  */
+
+.parent {
+    margin: 10px auto;
+    width: 100%;
+    /* height: auto; */
+    /* background-color: #eee; */
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
+    text-align: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.entete {
+    grid-column: span 12;
+    height: 600px;
+    background-image: url("./img/bkg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.formulaire {
+    background-image: url("./img/bkg-form.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-column: span 12;
+    height: 600px;
+}
+form {
+    width: 60%;
+    border: 1px solid red;
+    margin: 100px auto;
+}
+.enfant {
+    overflow: hidden;
+    grid-column: 2/12;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.photos {
+    display: flex;
+    flex-direction: column;
+}
+/* img { */
+/* width: 90%; */
+/* height: 95%; */
+/* margin: 10px auto; */
+/* } */
+img,
+h2,
+p {
+    width: 90%;
+
+    margin: 10px auto;
+    text-align: start;
+    vertical-align: text-top;
+}
+
+/* .footer {
+    background-color: rgb(214, 135, 31);
+    grid-column: span 12;
+    height: 200px;
+} */
+footer {
+    background-color: rgb(241, 95, 185);
+    padding: 1.1875rem;
+    margin-top: -10px;
+    height: 250px;
+}
+
+footer a {
+    border-left: 1em solid #ededed;
+    color: #ededed;
+    padding-left: 0.75em;
+    text-decoration: none;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(241, 95, 185);
+}
+footer a:hover {
+    border-color: rgb(212, 33, 33);
+    color: #333;
+}
+ul,
+li {
+    list-style: none;
+    text-align: left;
+}
